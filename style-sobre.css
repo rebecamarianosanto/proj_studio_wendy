@@ -1,0 +1,213 @@
+.section-sobre {
+    color: var(--black);
+    position: relative;
+    z-index: 18;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .container-sobre {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 0 0 3rem 0;
+  }  
+  /* Imagem */
+  
+  .container-sobre img {
+    margin-top: 10rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1.5rem;
+    object-fit: cover;  
+    overflow: hidden;
+  }
+  /* Bloco de texto */
+  .sobre-studio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  }
+  .sobre-studio h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    letter-spacing: 4px;
+    padding: 15px 0;
+  }
+  .card-sobre h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-sobre p {
+    width: 90%;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .list-valores p::before {
+    content: "• ";
+    color: #ED53CA;
+  }
+  
+  /* Info extra */
+  .info-sobre-studio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .social-media h3{
+    margin-bottom: 0.9rem;
+  }
+.links-midias-sociais{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+  
+  .social-media a {
+    border: 1px solid var(--pink-dark);
+    border-radius: 40px;
+    text-align: center;
+    max-width: 180px;
+    padding: 7px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: var(--font-size-small);
+  }
+
+  .social-media i{
+    font-size: 16px;
+    padding-right: 5px;
+  }
+  .social-media a:hover {
+    background-color: var(--pink-dark);
+    color: var(--bg);
+  }
+  .local-home{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .local-home h3{
+    margin-bottom: 0.9rem;
+  }
+  .dados-local{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .dados-local p{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .dados-local p i{
+      padding-right: 5px;
+      color: #333;
+  }
+  
+  iframe{
+    margin-top: 1.5rem;
+  }
+  
+  .svg-sobre{
+    width: 950px;
+    height: 950px;
+    background-image: url(galeria-imgs/bg-estudio/flor-clean.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: -1;
+    opacity: 0.2;
+    overflow: hidden;
+  }
+  .voltar-icon{
+    color: var(--pink-dark);
+    position: absolute;
+    left: 0%;
+    top: 1%;
+  }
+  .voltar-index{
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    width: 300px;
+    max-width: 270px;
+    margin-top: 5rem;
+    padding: 5px 24px;
+    font-size: var(--font-size-small);
+  }
+  .voltar-index i{
+    margin-right: 5px;
+  }
+  .voltar-index:hover i {
+    animation: arrowMoveLeft 0.8s infinite;
+  }
+  @keyframes arrowMoveLeft {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
+.btn-agendar:active{
+    transform: scale(0.95);
+}
+
+@media (max-width: 885px ){
+  .section-sobre{
+    padding: 10px 5px;
+    justify-content: center;
+  }
+  .container-sobre{
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    gap: 15px;
+  }
+  .container-sobre img{
+    margin-top: 4rem;
+  }
+  .sobre-studio h2 {
+    font-size: 2.8rem;
+    padding: 1px 0;
+  }
+  .sobre-studio{
+    width: 100%;
+  }
+  .card-sobre p {
+    width: 100%;
+  }
+  .voltar-icon{
+    left: 2%;
+  }
+  .svg-sobre{
+    right: auto;
+  }
+}
+@media (max-width: 320px){
+  .container-sobre img{
+    margin-top: 4rem;
+    width: 90%;
+    max-width: 300px;
+  }
+}
