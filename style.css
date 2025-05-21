@@ -16,7 +16,7 @@
 /* TAMANHO FONTE */
 :root{
     --font-size: 1.6rem;
-    --font-size-small: 1.4rem;
+    --font-size-small: 1.5rem;
     --font-size-large: 3rem;
 }
 *{
@@ -320,12 +320,13 @@ header{
     font-weight: 500;
     letter-spacing: 0.8px;
     max-width: 95%;
+    line-height: 1.4;
 }
 .s1{
     display: inline-block;
     transform: rotate(-1.5deg);
     padding: 0 4px;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .s2{
     color: var(--pink-dark);
@@ -337,7 +338,7 @@ header{
 .convite-agendamento-home{
     font-weight: 500;
     letter-spacing: 0.8px;
-    padding: 40px 0 20px 0;
+    padding: 35px 0 20px 0;
 }
 .bnt-home{
     width: 100%;
@@ -1085,11 +1086,12 @@ footer{
     font-size: var(--font-size);
     font-weight: 600;
     text-transform: capitalize;
+    color: #333;
 }
 .footer-links{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1.2rem;
 }
 .footer-links a{
     font-size: var(--font-size-small);
@@ -1236,33 +1238,7 @@ footer{
         width: 80%;
     }
 }
-@media (min-width: 390px) and (max-width: 896px){
-    .container-img-home{
-        width: 100%;
-    }
-    .container-img-home .ft1{
-        display: block;
-        width: 150px;
-        height: 308px;
-        background-size: cover;
-    }
-    .img-serv-home{
-        flex-direction: column;
-    }
-    .img-serv-home .ft1-1 {
-        display: none;
-    }
-    .img-serv-home .ft2 {
-        max-width: 150px;
-        height: 150px;
-        background-size: cover;
-    }
-    .img-serv-home .ft3 {
-        max-width: 150px;
-        height: 150px;
-        background-size: cover;
-    }
-}
+
 
 @media (max-width: 767px) {
     section{
@@ -1283,7 +1259,7 @@ footer{
         flex-direction: column;
         gap: 2.4rem;
         padding: 6rem 7px;
-        margin-top: 0;
+        margin-top: 1.5rem;
     }
     .apresentacao-home{
         width: 100%;
@@ -1398,7 +1374,7 @@ footer{
         width: 80%;
     }
     
-    /* LOCALIZAÇÃO */
+    /* localização */
     .section-localizacao{
         flex-direction: column;
         justify-content: center;
@@ -1419,7 +1395,7 @@ footer{
         justify-content: center;   
         left: auto;
     }
-    /* FOOTER */
+    /* footer */
     .container-footer{
         flex-direction: column;
     }
@@ -1443,6 +1419,35 @@ footer{
         gap: 7px;
     }
 }
+/* tamanho imagens hero mobile */
+@media (min-width: 390px) and (max-width: 896px){
+    .container-img-home{
+        width: 100%;
+    }
+    .container-img-home .ft1{
+        display: block;
+        width: 150px;
+        height: 308px;
+        background-size: cover;
+    }
+    .img-serv-home{
+        flex-direction: column;
+    }
+    .img-serv-home .ft1-1 {
+        display: none;
+    }
+    .img-serv-home .ft2 {
+        max-width: 150px;
+        height: 150px;
+        background-size: cover;
+    }
+    .img-serv-home .ft3 {
+        max-width: 150px;
+        height: 150px;
+        background-size: cover;
+    }
+}
+
 @media (max-width: 389px){
     /* container fotos hero */
     .container-img-home{
@@ -1470,32 +1475,6 @@ footer{
         height: 99px;
         background-size: cover;
     }
-    
-    /* .container-img-home{
-        width: 100%;
-    }
-    .container-img-home .ft1{
-        display: none;
-    }
-    .img-serv-home{
-        flex-direction: row;
-    }
-    .img-serv-home .ft1-1 {
-        display: block;
-        width: 120px;
-        height: 150px;
-        background-size: cover;
-    }
-    .img-serv-home .ft2 {
-        max-width: 120px;
-        height: 150px;
-        background-size: cover;
-    }
-    .img-serv-home .ft3 {
-        max-width: 120px;
-        height: 150px;
-        background-size: cover;
-    } */
 }
 
 @media (max-width: 320px) {
