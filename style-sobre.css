@@ -67,7 +67,7 @@
   .info-sobre-studio {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 3rem;
   }
   .social-media{
     display: flex;
