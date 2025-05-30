@@ -364,9 +364,10 @@ header{
     border-radius: 8px;
     text-transform: uppercase;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.6px;
     text-align: center;
+    color: var(--black);
 }
 .btn-agendar:hover{
     transition: all 0.2s ease-in-out;
@@ -374,8 +375,7 @@ header{
 }
 .btn-agendar:nth-child(2){
     border: 2px solid var(--black-light);
-    background-color:transparent;
-    color: var(--black-dark);
+    
 }
 .btn-agendar:nth-child(2):hover i {
     animation: arrowMove 0.8s infinite;
