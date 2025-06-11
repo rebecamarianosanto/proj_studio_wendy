@@ -4,7 +4,7 @@ Landing page desenvolvida para um estúdio de beleza, com foco em cuidados de un
 
 ## 📸 Preview
 
-![image](https://github.com/user-attachments/assets/ab708e41-a31f-4f0c-8fa7-294c936cd7c7)
+![studio-wendy](https://github.com/user-attachments/assets/7aca6063-fc2a-4807-8704-ab0986379324)
 
 ## 🔗 Acesse o Projeto
 
