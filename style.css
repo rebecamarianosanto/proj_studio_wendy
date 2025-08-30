@@ -1552,10 +1552,10 @@ footer{
     .filter-btn {
         padding: 1rem 1.2rem;
     }
-    .gallery-item {
+    /* .gallery-item {
         min-width: 95%;
         max-width: 250px;
-    }
+    } */
     .bnt-galeria-insta{
         padding: 1rem 0.7rem;
         font-size: var(--font-size-small);
