@@ -635,8 +635,7 @@ header{
     gap: 1.2rem;
     max-width: 1200px;
     margin: 0 auto;
-    
-    flex-basis: 1
+    /* flex-basis: 1 */
   }
 
   .gallery-item {
@@ -1345,21 +1344,26 @@ footer{
     }
 
     /* galeria de fotos  */
-    .gallery-grid {
-        display: flex;
-        overflow-x: auto;
-        gap: 1rem;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 1rem;
-    }
-
     .gallery-item {
         flex: 0 0 auto;
         min-width: 80%;
         max-width: 320px;
         scroll-snap-align: start;
     }
+    .gallery-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 0.8rem;
+    }
+
+  .filter-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+  }
     /* agendamento */
     .section-agendamento{
         flex-wrap: wrap;
@@ -1444,6 +1448,15 @@ footer{
         height: 144px;
         background-size: cover;
     }
+}
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr; /* duas colunas no celular */
+    gap: 0.6rem;
+  }
+  .gallery-overlay * {
+    font-size: 0.85rem; /* texto menor no mobile */
+  }
 }
 
 @media (max-width: 389px){
